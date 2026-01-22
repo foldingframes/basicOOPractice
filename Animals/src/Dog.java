@@ -12,4 +12,18 @@ public class Dog extends Animal {
     public void sleep(){
 
     }
+
+    // creating switch case based on which enum value is passed through it
+
+    public void furColor(FurColor fur){
+        switch (fur) {
+            case BLACK:
+                System.out.println(FurColor.BLACK.coolFactor);
+            case GREY:
+                System.out.println(FurColor.GREY.coolFactor);
+            case WHITE:
+                System.out.println(FurColor.WHITE.coolFactor);
+
+        }
+    }
 }
